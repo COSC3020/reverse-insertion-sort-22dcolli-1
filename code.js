@@ -11,7 +11,8 @@ function insertionSort(arr) {
   return arr;
 }
 */
-function insertionSortReverse(arr) {
+
+function revInsertionSort(arr) {
   for(var i = arr.length-1; i >= 0; i--) {
     var val = arr[i];
     var j;
@@ -22,6 +23,7 @@ function insertionSortReverse(arr) {
   }
   return arr;
 }
+
 
 
 
