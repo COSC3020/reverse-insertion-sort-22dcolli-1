@@ -1,3 +1,4 @@
+/*
 function reverseInsertionSort(arr) {
   for(var i = arr.length-1; i >=0; i--) {
       var val = arr[i];
@@ -9,6 +10,20 @@ function reverseInsertionSort(arr) {
   }
   return arr;
 }
+*/
+
+function insertionSortReverse(arr) {
+  for(var i = arr.length-1; i >= 0; i--) {
+    var val = arr[i];
+    var j;
+    for(j = i; j < arr.length-1  && arr[j+1] < val; j++) {
+      arr[j] = arr[j+1];
+    }
+    arr[j] = val;
+  }
+  return arr;
+}
+
 
 /*
 function insertionSortReverse(arr) 
@@ -31,4 +46,5 @@ function insertionSortReverse(arr)
 }
 */
 //console.log(insertionSort(arr))
+
 
