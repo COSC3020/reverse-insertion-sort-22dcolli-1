@@ -49,5 +49,5 @@ suspected, charges may be filed against me without prior notice.”
 Checked using my answer from last semester but attempted before checking.
 
 ## Answer:
-The average time complexity is $\Theta(n^2)$, I believe this is correct after thinking about insertion sort and how it operates. In particular, the best case is that an already sorted input which would be $\Theta(n)$  because the algorith goes through and confirms it doesn't need to do anything extra. Otherwise, the algorithm 
+The average time complexity is $\Theta(n^2)$, I believe this is correct after thinking about insertion sort and how it operates. In particular, the best case is with an already sorted input which would be $\Theta(n)$ because the algorithm goes through the outer loop and confirms it doesn't need to do anything extra. Otherwise, at the very least, the algorithm will at least go through both loops once(it could be more times, but if the input is not already sorted then it has to go through both loops at least once). This leaves us with the same complexity as the worst case $\Theta(n^2)$ as our average complexity.
 
